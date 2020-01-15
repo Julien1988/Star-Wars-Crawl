@@ -1,3 +1,7 @@
+body {
+  background-image: url(images/ed8ac0c600386672d54b1b4f64001860.jpg);
+}
+
 @keyframes scroll-starwars {
     from {padding-bottom: 0em;}
     to {padding-bottom: 10em;}
@@ -5,14 +9,51 @@
     to {padding-top: 0em;}
   }
 
+  @keyframes show-starwars {
+    from {opacity: 0;}
+    to {opacity: 1;}
+   
+  }
+  
+  /* @keyframes hide-starwars {
+    from {opacity: 1;}
+    to {opacity: 0;}
+   
+  } */
 
 
   main {
-    /* transform: rotate3d(30, 30, 1, 30deg); */
     transform: perspective(280px) rotateX(25deg);
     overflow-y: hidden;
     max-height: 10em;
-    /* background-color: red; */
     animation-name: scroll-starwars;
-    animation-duration: 10s;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    padding-bottom: 0em;
+    padding-top: 20em;
+    
   }
+
+  h1 {
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+
+    /* animation-name: hide-starwars;
+    animation-duration: 10s;
+    animation-delay: 1s; */
+  }
+
+  p {
+    color: yellow;
+    font-weight: bold;
+    margin-left: 10em;
+    margin-right: 10em;
+    
+    animation-name: show-starwars;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    opacity: 0;
+  }
+
