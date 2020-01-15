@@ -8,10 +8,11 @@
 
 
   main {
-    transform: rotate3d(30, 30, 1, 30deg);
+    /* transform: rotate3d(30, 30, 1, 30deg); */
+    transform: perspective(280px) rotateX(25deg);
     overflow-y: hidden;
     max-height: 10em;
-    background-color: red;
+    /* background-color: red; */
     animation-name: scroll-starwars;
     animation-duration: 10s;
   }
