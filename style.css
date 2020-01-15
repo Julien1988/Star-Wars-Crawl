@@ -1,0 +1,17 @@
+@keyframes scroll-starwars {
+    from {padding-bottom: 0em;}
+    to {padding-bottom: 10em;}
+    from {padding-top: 20em;}
+    to {padding-top: 0em;}
+  }
+
+
+
+  main {
+    transform: rotate3d(30, 30, 1, 30deg);
+    overflow-y: hidden;
+    max-height: 10em;
+    background-color: red;
+    animation-name: scroll-starwars;
+    animation-duration: 10s;
+  }
